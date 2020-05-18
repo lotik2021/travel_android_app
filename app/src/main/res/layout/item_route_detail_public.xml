@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/trip_stops_image"
+        android:layout_width="12dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:tint="@color/color_accent"
+        app:layout_constraintBottom_toBottomOf="@+id/public_transport_destination_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/public_transport_departure_name"
+        tools:src="@drawable/trip" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/trip_stops_image"
+        app:layout_constraintStart_toStartOf="@+id/trip_stops_image"
+        app:layout_constraintTop_toTopOf="@+id/trip_stops_image"
+        app:srcCompat="@drawable/dot_white" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_stops_image"
+        app:layout_constraintEnd_toEndOf="@+id/trip_stops_image"
+        app:layout_constraintStart_toStartOf="@+id/trip_stops_image"
+        app:srcCompat="@drawable/dot_white" />
+
+    <ImageView
+        android:id="@+id/trip_type_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/icon_bus" />
+
+    <TextView
+        android:id="@+id/public_transport_type"
+        style="@style/TextTripDetailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_type_image"
+        app:layout_constraintStart_toEndOf="@+id/trip_type_image"
+        app:layout_constraintTop_toTopOf="@+id/trip_type_image"
+        tools:text="На автобусе" />
+
+    <TextView
+        android:id="@+id/public_transport_line_name"
+        style="@style/TextTripDetailStops"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/public_transport_type"
+        app:layout_constraintTop_toBottomOf="@id/public_transport_type"
+        tools:text="Пл. Боровицкая" />
+
+    <TextView
+        android:id="@+id/public_transport_line_number"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_subway_line_number"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/public_transport_type"
+        app:layout_constraintStart_toEndOf="@+id/public_transport_type"
+        app:layout_constraintTop_toTopOf="@+id/public_transport_type"
+        tools:text="26" />
+
+    <TextView
+        android:id="@+id/public_transport_departure_name"
+        style="@style/TextTripDetailLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/public_transport_departure_time"
+        app:layout_constraintStart_toEndOf="@+id/trip_stops_image"
+        app:layout_constraintTop_toBottomOf="@id/public_transport_line_name"
+        tools:text="Пл. Боровицкая" />
+
+    <TextView
+        android:id="@+id/public_transport_stops"
+        style="@style/TextTripDetailStops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/trip_stops_image"
+        app:layout_constraintTop_toBottomOf="@+id/public_transport_departure_name"
+        tools:text="14 остановок" />
+
+    <TextView
+        android:id="@+id/public_transport_destination_name"
+        style="@style/TextTripDetailLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/public_transport_destination_time"
+        app:layout_constraintStart_toEndOf="@+id/trip_stops_image"
+        app:layout_constraintTop_toBottomOf="@+id/public_transport_stops"
+        tools:text="Пл. Боровицкая" />
+
+    <TextView
+        android:id="@+id/public_transport_departure_time"
+        style="@style/TextTripDetailTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/public_transport_departure_name"
+        tools:text="20:00" />
+
+    <TextView
+        android:id="@+id/public_transport_destination_time"
+        style="@style/TextTripDetailTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/public_transport_destination_name"
+        app:layout_constraintEnd_toEndOf="@+id/public_transport_departure_time"
+        tools:text="21:00" />
+
+    <View
+        android:id="@+id/padding_view"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trip_stops_image" />
+
+
+    <ImageButton
+        android:id="@+id/public_transport_view_on_map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RouteDetailItemTargetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/public_transport_type"
+        app:layout_constraintBottom_toBottomOf="@id/public_transport_type" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

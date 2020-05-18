@@ -1,0 +1,43 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.tickets.dateselect.DateSelectFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/date_select_toolbar"
+        style="@style/ToolbarWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/selected_dates"
+            style="@style/ToolbarBlueCenteredText"
+            tools:text="19 июля – 9 августа" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.kizitonwose.calendarview.CalendarView
+        android:id="@+id/date_select_calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:cv_dayViewResource="@layout/calendar_day_layout"
+        app:cv_monthFooterResource="@layout/calendar_month_footer"
+        app:cv_monthHeaderResource="@layout/calendar_month_header"
+        app:layout_constraintBottom_toTopOf="@id/date_select_apply_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_select_toolbar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/date_select_apply_button"
+        style="@style/ApplyButton.Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Готово" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

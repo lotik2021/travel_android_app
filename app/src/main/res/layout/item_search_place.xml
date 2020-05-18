@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?selectableItemBackground"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/search_place_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/search_place_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_place_title"
+        tools:src="@drawable/google_place_default" />
+
+    <TextView
+        android:id="@+id/search_place_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/action_icon"
+        app:layout_constraintStart_toEndOf="@id/search_place_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ласточка" />
+
+    <TextView
+        android:id="@+id/search_place_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/text_grey"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/search_place_title"
+        app:layout_constraintStart_toStartOf="@+id/search_place_title"
+        app:layout_constraintTop_toBottomOf="@+id/search_place_title"
+        tools:text="улица Бла бла, бла бла бла" />
+
+    <ImageView
+        android:id="@+id/action_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:contentDescription="@null"
+        android:tint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_trash" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#F2F4FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/search_place_title"
+        app:layout_constraintTop_toBottomOf="@id/search_place_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

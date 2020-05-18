@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?selectableItemBackground"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/select_place_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@null"
+        android:src="@drawable/place_common"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/select_place_title" />
+
+    <TextView
+        android:id="@+id/select_place_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/blue_primary"
+        android:layout_marginTop="12dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/select_place_alias"
+        app:layout_constraintStart_toEndOf="@id/select_place_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ласточка" />
+
+    <TextView
+        android:id="@+id/select_place_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/text_blue_medium"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@id/select_place_title"
+        app:layout_constraintStart_toStartOf="@+id/select_place_title"
+        app:layout_constraintTop_toBottomOf="@+id/select_place_title"
+        tools:text="улица Бла бла, бла бла бла" />
+
+    <TextView
+        android:id="@+id/select_place_alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-light"
+        tools:text="svo"
+        android:fontFeatureSettings="smcp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:background="#F2F4FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/select_place_title"
+        app:layout_constraintTop_toBottomOf="@id/select_place_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

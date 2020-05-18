@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray">
+
+    <TextView
+        android:id="@+id/routes_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:letterSpacing="0.1"
+        android:paddingStart="16dp"
+        android:paddingTop="30dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="14dp"
+        android:text="@string/favorites_addresses_title"
+        android:textAllCaps="true"
+        android:textColor="@color/text_blue"
+        android:textSize="11sp"
+        tools:ignore="SmallSp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divider" />
+
+</FrameLayout>

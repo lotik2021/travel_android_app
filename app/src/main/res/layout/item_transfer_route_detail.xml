@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEEFF4"
+    android:paddingTop="20dp"
+    android:paddingBottom="28dp"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_ellipse"
+        android:tint="@color/primary_taxi"
+        app:layout_constraintBottom_toBottomOf="@+id/transfer_title"
+        app:layout_constraintEnd_toStartOf="@+id/transfer_title"
+        app:layout_constraintTop_toTopOf="@+id/transfer_title" />
+
+    <TextView
+        android:id="@+id/transfer_title"
+        style="@style/DetailRouteBoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:includeFontPadding="false"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="пересадка  •  5ч 55 мин" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/blue_primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transfer_title"
+        app:layout_constraintTop_toBottomOf="@+id/transfer_title"
+        tools:text="Санкт-Петербург" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transfer_title"
+        app:layout_constraintTop_toBottomOf="@+id/city"
+        tools:text="а/п Пулково – а/п Внуково" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

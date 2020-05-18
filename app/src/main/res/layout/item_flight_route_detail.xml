@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_ellipse"
+        android:tint="@color/primary_flight"
+        app:layout_constraintBottom_toBottomOf="@+id/transport_title"
+        app:layout_constraintEnd_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toTopOf="@+id/transport_title" />
+
+    <TextView
+        android:id="@+id/transport_title"
+        style="@style/DetailRouteBoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:includeFontPadding="false"
+        android:text="@string/plane_small"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.7"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/blue_primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/transport_title"
+        tools:text="Aeroflot" />
+
+    <TextView
+        android:id="@+id/transport_description"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="Boeing-737-800" />
+
+    <FrameLayout
+        android:id="@+id/item_route_info_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/transport_description"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/item_route_info"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tariff_title"
+        style="@style/DetailRouteBoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:includeFontPadding="false"
+        android:text="@string/about_tariff"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/item_route_info_container" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="7dp"
+        android:alpha="0.2"
+        android:src="@drawable/icon_info_blue"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tariff_title"
+        app:layout_constraintStart_toEndOf="@+id/tariff_title"
+        app:layout_constraintTop_toTopOf="@+id/tariff_title"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/carry_on_baggage"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/tariff_title"
+        tools:text="@string/carry_on_baggage_with" />
+
+    <TextView
+        android:id="@+id/baggage"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/carry_on_baggage"
+        tools:text="@string/baggage_with" />
+
+    <TextView
+        android:id="@+id/exchange_ticket"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/baggage"
+        tools:text="@string/exchange_with" />
+
+    <TextView
+        android:id="@+id/ticket_refund"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/exchange_ticket"
+        tools:text="@string/refund_with" />
+
+    <TextView
+        android:id="@+id/price_description"
+        style="@style/DetailRouteBoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/price_title"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/ticket_refund" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_prices_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/comfort_type_selected"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_description">
+
+        <TextView
+            android:id="@+id/cars_types_title"
+            style="@style/DetailRouteSecondaryTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/ticket"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/free_place"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/free_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Мест: 8" />
+
+        <TextView
+            android:id="@+id/car_price"
+            style="@style/DetailRoutePrimaryTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="50dp"
+            android:alpha="0.8"
+            android:gravity="end"
+            android:includeFontPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/free_place"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="138 ₽" />
+
+        <ImageView
+            android:id="@+id/flight_price_info"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.2"
+            android:src="@drawable/icon_info_blue"
+            app:layout_constraintBottom_toBottomOf="@+id/car_price"
+            app:layout_constraintStart_toEndOf="@+id/car_price"
+            app:layout_constraintTop_toTopOf="@+id/car_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

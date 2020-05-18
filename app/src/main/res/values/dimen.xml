@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This file contains common dimens for the whole application. --><!-- author: a.bilchuk -->
+<resources>
+
+    <!-- Common paddings, margins, widths and heights -->
+    <dimen name="size_xxxsmall">1dp</dimen>
+    <dimen name="size_xxsmall">2dp</dimen>
+    <dimen name="size_xsmall_half">3dp</dimen>
+    <dimen name="size_xsmall">4dp</dimen>
+    <dimen name="size_xsmall_plus_half">5dp</dimen>
+    <dimen name="size_xsmall_plus">6dp</dimen>
+    <dimen name="size_small">8dp</dimen>
+    <dimen name="size_small_half">10dp</dimen>
+    <dimen name="size_small_plus">12dp</dimen>
+    <dimen name="size_medium">16dp</dimen>
+    <dimen name="size_medium_plus_half_half">17dp</dimen>
+    <dimen name="size_medium_plus_half">18dp</dimen>
+    <dimen name="size_medium_plus_three_quarters">19dp</dimen>
+    <dimen name="size_medium_plus">20dp</dimen>
+    <dimen name="size_large">24dp</dimen>
+    <dimen name="size_large_plus_half">26dp</dimen>
+    <dimen name="size_large_plus">28dp</dimen>
+    <dimen name="size_xlarge">32dp</dimen>
+    <dimen name="size_xlarge_plus_half">34dp</dimen>
+    <dimen name="size_xlarge_plus">36dp</dimen>
+    <dimen name="size_xlarge_plus_plus_half">38dp</dimen>
+    <dimen name="size_xxlarge">40dp</dimen>
+    <dimen name="size_xxlarge_plus">44dp</dimen>
+    <dimen name="size_xxxlarge">48dp</dimen>
+    <dimen name="size_row_height">56dp</dimen>
+    <dimen name="size_row_height_plus">80dp</dimen>
+    <dimen name="size_tablet_indent">80dp</dimen>
+    <dimen name="size_app_bar_height">104dp</dimen>
+    <dimen name="size_app_bar_overlay_margin">-104dp</dimen>
+    <dimen name="size_date_operation">168dp</dimen>
+
+    <dimen name="size_name_width">128dp</dimen>
+
+    <dimen name="size_margin_larger_than_fab">88dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Common text sizes in dp (do not use sp) -->
+    <dimen name="text_size_xxsmall">10dp</dimen>
+    <dimen name="text_size_xsmall">12dp</dimen>
+    <dimen name="text_size_small">14dp</dimen>
+    <dimen name="text_size_medium">16dp</dimen>
+    <dimen name="text_size_medium_plus">18dp</dimen>
+    <dimen name="text_size_large">20dp</dimen>
+    <dimen name="text_size_large_plus">22dp</dimen>
+    <dimen name="text_size_xlarge">24dp</dimen>
+
+    <!-- Wrap content and match parents constants -->
+    <integer name="wrap_content_int">-2</integer>
+    <integer name="match_parent_int">-1</integer>
+
+    <dimen name="app_bar_elevation">8dp</dimen>
+    <dimen name="height_my">54dp</dimen>
+    <dimen name="е12">12dp</dimen>
+    <dimen name="е16">16dp</dimen>
+    <dimen name="е6">6dp</dimen>
+    <dimen name="е64">64dp</dimen>
+    <dimen name="е96">96dp</dimen>
+    <dimen name="е128">128dp</dimen>
+    <dimen name="е120">120dp</dimen>
+    <dimen name="е256">256dp</dimen>
+    <dimen name="е2">2dp</dimen>
+
+    <dimen name="pager_indicator_size">10dp</dimen>
+    <dimen name="pager_indicator_margin">13dp</dimen>
+
+    <dimen name="text_15_sp">15sp</dimen>
+    <dimen name="text_12_sp">12sp</dimen>
+
+    <dimen name="record_decorator_margin_end">12dp</dimen>
+    <dimen name="record_decorator_margin_start">-15dp</dimen>
+    <dimen name="tickets_selection_margin_start">56dp</dimen>
+
+    <dimen name="segments_list_margin_top">10dp</dimen>
+    <dimen name="segments_list_margin_bottom">97dp</dimen>
+    <dimen name="basket_list_margin_bottom">150dp</dimen>
+    <dimen name="segments_providers_brand_margin">2dp</dimen>
+    <dimen name="segments_providers_brand_size">10dp</dimen>
+    <dimen name="segments_carriage_margin">30dp</dimen>
+
+    <dimen name="detail_route_divider_margin">35dp</dimen>
+
+    <dimen name="map_polyline_width">4dp</dimen>
+
+</resources>

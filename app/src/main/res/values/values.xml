@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RangeBar">
+        <attr format="float" name="mrb_tickStart" />
+        <attr format="float" name="mrb_tickEnd" />
+        <attr format="float" name="mrb_tickInterval" />
+        <attr format="dimension" name="mrb_tickHeight" />
+        <attr format="dimension" name="mrb_tickWidth" />
+        <attr format="color" name="mrb_tickDefaultColor" />
+        <attr format="reference" name="mrb_tickColors" />
+        <attr format="color" name="mrb_tickLabelColor" />
+        <attr format="color" name="mrb_tickLabelSelectedColor" />
+        <attr format="reference" name="mrb_tickBottomLabels" />
+        <attr format="reference" name="mrb_tickTopLabels" />
+        <attr format="reference|string" name="mrb_tickDefaultLabel" />
+        <attr format="dimension" name="mrb_tickLabelSize" />
+        <attr format="dimension" name="mrb_barWeight" />
+        <attr format="reference|color" name="mrb_rangeBarColor" />
+        <attr format="dimension" name="mrb_selectorSize" />
+        <attr format="reference|color" name="mrb_selectorBoundaryColor" />
+        <attr format="dimension" name="mrb_selectorBoundarySize" />
+        <attr format="reference|color" name="mrb_pinTextColor" />
+        <attr format="reference|color" name="mrb_pinColor" />
+        <attr format="dimension" name="mrb_pinPadding" />
+        <attr format="dimension" name="mrb_pinMinFont" />
+        <attr format="dimension" name="mrb_pinMaxFont" />
+        <attr format="dimension" name="mrb_rangeBarPaddingBottom" />
+        <attr format="reference|color" name="mrb_selectorColor" />
+        <attr format="reference|color" name="mrb_leftSelectorColor" />
+        <attr format="reference|color" name="mrb_rightSelectorColor" />
+        <attr format="boolean" name="mrb_rangeBar" />
+        <attr format="boolean" name="mrb_temporaryPins" />
+        <attr format="boolean" name="mrb_rangeBar_rounded" />
+        <attr format="dimension" name="mrb_connectingLineWeight" />
+        <attr format="reference|color" name="mrb_connectingLineColor" />
+        <attr format="dimension" name="mrb_pinRadius" />
+        <attr format="reference" name="mrb_connectingLineColors" />
+        <attr format="boolean" name="mrb_onlyOnDrag" />
+    </declare-styleable>
+</resources>

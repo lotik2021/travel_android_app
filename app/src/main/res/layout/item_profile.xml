@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_transport_container"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="11dp"
+        android:layout_gravity="center_vertical"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/icon_metro" />
+
+    <Switch
+        android:id="@+id/item"
+        style="@style/DefaultProfileTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableEnd="@null"
+        android:drawablePadding="0dp"
+        tools:text="Метро" />
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<resources>
+    <plurals name="stops_count">
+        <item quantity="one">%1$d остановка</item>
+        <item quantity="few">%1$d остановки</item>
+        <item quantity="other">%1$d остановок</item>
+    </plurals>
+
+    <!--Common-->
+    <plurals name="stations_stops_count">
+        <item quantity="one">%1$d станция</item>
+        <item quantity="few">%1$d станции</item>
+        <item quantity="other">%1$d станций</item>
+    </plurals>
+    <plurals name="changes_count">
+        <item quantity="one">%1$d пересадка</item>
+        <item quantity="few">%1$d пересадки</item>
+        <item quantity="other">%1$d пересадок</item>
+    </plurals>
+    <plurals name="movista_route_options_count">
+        <item quantity="one">Более &lt;b>%1$d&lt;/b> варианта доступно к покупке на &lt;b>movista.ru&lt;/b></item>
+        <item quantity="few">Более &lt;b>%1$d&lt;/b> вариантов доступны к покупке на &lt;b>movista.ru&lt;/b></item>
+        <item quantity="other">Более &lt;b>%1$d&lt;/b> вариантов доступно к покупке на &lt;b>movista.ru&lt;/b></item>
+    </plurals>
+    <plurals name="passengers_child_age">
+        <item quantity="zero">До года</item>
+        <item quantity="one">%1$d год</item>
+        <item quantity="two">%1$d года</item>
+        <item quantity="few">%1$d года</item>
+        <item quantity="many">%1$d лет</item>
+        <item quantity="other">%1$d лет</item>
+    </plurals>
+    <plurals name="filter_applying_title">
+        <item quantity="one">%d билет от %s</item>
+        <item quantity="few">%d билета от %s</item>
+        <item quantity="other">%d билетов от %s</item>
+    </plurals>
+    <plurals name="passenger_price">
+        <item quantity="one">Цена %s за %d пассажира</item>
+        <item quantity="few">Цена %s за %d пассажиров</item>
+        <item quantity="other">Цена %s за %d пассажиров</item>
+    </plurals>
+    <string name="app_name">Movista</string>
+    <string name="skip">Пропустить</string>
+    <string name="allow">Разрешить</string>
+    <string name="next">Далее</string>
+    <string name="ok">Ок</string>
+    <string name="later">Позже</string>
+    <string name="apply">Применить</string>
+    <string name="error_unexpected_error">Упс! Произошла ошибка</string>
+    <string name="edit">Редактирование</string>
+    <string name="save">Сохранить</string>
+    <string name="repeat_later">Попробуйте позже</string>
+    <string name="access_permission">Разрешить доступ</string>
+    <string name="later_access_location_permission_description">Вы всегда можете разрешить приложению доступ к данным о местоположении устройства в Настройках приложения</string>
+    <string name="later_access_audio_permission_description">Вы всегда можете разрешить приложению доступ к микрофону в Настройках приложения</string>
+    <string name="enter_message">Введите сообщение</string>
+    <string name="error_no_connection">Упс! Отсутствует интернет-соединение :(</string>
+    <string name="error_server_unavailable">Сервис временно недоступен. Попробуйте позже.</string>
+    <string name="error_server_common">Упс! Ошибка сервера</string>
+    <string name="error_wrong_code">Упс! Неверный код подтверждения</string>
+    <string name="recents">недавние</string>
+    <string name="favourites">избранные</string>
+    <string name="favourite">Избранное</string>
+    <string name="history">История</string>
+    <string name="price">%1$d ₽</string>
+    <string name="start_time_to_end_time">%1$s - %2$s</string>
+    <string name="price_from">от %1$s</string>
+    <string name="arrival_time_interval">Время прибытия: от %1$s до %2$s</string>
+    <string name="short_arrival_time_interval">от %s до %s</string>
+    <string name="approximately_duration">≈ %1$s</string>
+    <string name="error_no_location">Упс! Ваше местоположение недоступно</string>
+    <string name="approximately_duration_and_distance">≈ %1$s, %2$s</string>
+    <string name="duration_and_distance_braces">%1$s (%2$s)</string>
+    <string name="duration_braces">(%1$s)</string>
+    <string name="change">Изменить</string>
+    <string name="more_detail">Подробнее</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="just_back">Назад</string>
+
+    <!-- Trips -->
+    <string name="refill_travel_card">Пополнить проездной</string>
+    <string name="update">Обновить</string>
+    <string name="cancel">Отмена</string>
+    <string name="copied">Текст скопирован в буфер обмена</string>
+    <string name="connection_error">Проблемы с соединением</string>
+    <string name="trip_by_bus">На автобусе</string>
+    <string name="trip_by_commuter_train">На электричке</string>
+    <string name="trip_by_subway">На метро</string>
+    <string name="trip_by_tram">На трамвае</string>
+
+    <!-- Transport types -->
+    <string name="trip_by_ferry">На пароме</string>
+    <string name="trip_by_heavy_rail">На поезде</string>
+    <string name="trip_by_trolleybus">На троллейбусе</string>
+    <string name="trip_by_share_taxi">На маршрутке</string>
+    <string name="trip_by_car">На машине</string>
+    <string name="change_selection">Изменить выбор</string>
+    <string name="trip_duration_format" translatable="false">%s (%s)</string>
+
+    <!-- Chat -->
+    <string name="subway">Метро</string>
+    <string name="speed_pattern">%s м/с</string>
+    <string name="pressure_pattern">%d мм рт. ст.</string>
+    <string name="percent_pattern">%d %%</string>
+    <string name="celsius_title">ºС</string>
+
+    <!-- About App -->
+    <string name="bus">Автобус</string>
+    <string name="tram">Трамвай</string>
+    <string name="trolleybus">Троллейбус</string>
+    <string name="commuter_train">Электричка</string>
+    <string name="user_message_default_hint">Введите сообщение</string>
+    <string name="user_agreement">Пользовательское соглашение</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="policy_of_personal_data">Политика обработки персональных\nданных</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="instagram">Instagram</string>
+    <string name="vk">Вконтакте</string>
+    <string name="ok_title">Одноклассники</string>
+    <string name="facebook">Facebook</string>
+
+    <!-- Intro -->
+    <string name="youtube">YouTube</string>
+    <string name="twitter">Twitter</string>
+    <string name="social_network">Социальные сети</string>
+    <string name="reviews_title">Отзывы</string>
+    <string name="google_play_reviews_title">Оцените нас в GooglePlay</string>
+    <string name="welcome_to_movista_title">Добро пожаловать в Movista!</string>
+    <string name="welcome_to_movista_description">Твой помощник в городе и путешествии - просто спроси!</string>
+    <string name="route_building_title">Построение маршрутов</string>
+    <string name="route_building_description">Общественный транспорт, такси, самолеты, автобусы и поезда</string>
+    <string name="card_recharge_title">Пополнение транспортных карт</string>
+    <string name="far_route_building_title">Построение дальних маршрутов</string>
+    <string name="far_route_building_description">Купить билет на самолет, поезд или автобус</string>
+    <string name="geo_description">Определение геолокации позволит вам комфортнее и быстрее использовать сервис Movista</string>
+
+    <!-- Refill travel cards -->
+    <string name="card_recharge_description">Пополни Тройку или Стрелку, не выходя из приложения</string>
+    <string name="terms_of_use_description">С пользовательским соглашением согласен</string>
+    <string name="personal_data_policy_description">С политикой обработки персональных данных согласен</string>
+    <string name="privacy_policy_description">С политикой конфиденциальности согласен</string>
+    <string name="definition_geo_location_description">Определение геолокации позволит Вам комфортнее и быстрее использовать сервис Movista</string>
+    <string name="request_balance">Запросить баланс</string>
+    <string name="attention">Обратите внимание</string>
+    <string name="card_number_strelka">Номер карты «Стрелка»</string>
+
+    <!--Info-->
+    <string name="amount">Сумма пополнения</string>
+    <string name="refill">Оплатить</string>
+    <string name="strelka_balance">баланс: %1$d ₽</string>
+    <string name="amount_helper">от %1$d ₽ до %2$d ₽</string>
+    <string name="error_wrong_card_num">Несуществующий номер карты</string>
+
+    <string name="about_application">О приложении</string>
+    <string name="app_version_text">Версия %s</string>
+    <string name="feed_back_title">Обратная связь. Android app Movista.</string>
+    <string name="feed_back_content">\n---\nПриложение: Мовиста %s\nУстройство: %s\nВерсия Android: %s\n\nНе удаляйте эту информацию, если у вас возникла проблема с приложением. Она поможет нам быстрее разобраться в чем дело.\n---</string>
+    <string name="choose_email_client">Выберите почтовый клиент</string>
+
+    <!-- Auth -->
+    <string name="buy_with_movista">Купить на <b>movista.ru</b></string>
+    <string name="error_chat_no_connection">Проблемы с соединением :(\nПопробуйте обновить страницу</string>
+    <string name="refresh">Обновить</string>
+    <string name="route_through">маршрут через:</string>
+    <string name="route_through_capitalized_first">Маршрут через:</string>
+    <string name="commuter_train_format">№%s, %s</string>
+    <string name="enter_phone_hint">Пожалуйста, введите Ваш номер телефона, мы вышлем на него код</string>
+    <string name="enter_code_hint">Пожалуйста, проверьте СМС, мы отправили код на Ваш телефон</string>
+
+    <!-- Profile -->
+    <string name="phone_number">Номер телефона</string>
+    <string name="code">Код</string>
+    <string name="resend_code_count">Выслать код повторно через &lt;b>%1$d сек&lt;/b></string>
+    <string name="resend_code">&lt;b>Выслать код повторно&lt;/b></string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="profile">Профиль</string>
+    <string name="routes">Маршруты</string>
+    <string name="favorite_addresses">Избранные адреса</string>
+    <string name="transport_types">Виды транспорта</string>
+
+    <!-- Favorites -->
+    <string name="info_title">Информация</string>
+    <string name="legal_documents">Правовые документы</string>
+    <string name="auth_description">Сохраняйте избранные адреса и\nнастраивайте предпочтительный\nтранспорт для Вас</string>
+    <string name="sign_in">Войти</string>
+    <string name="public_transport">Общественный транспорт</string>
+    <string name="favorites_addresses_title">Мои избранные адреса</string>
+
+    <!-- Plurals -->
+    <string name="home">Дом</string>
+
+    <string name="work">Работа</string>
+
+    <string name="add_address">Добавить адрес</string>
+
+    <string name="enter_name">Введите название</string>
+
+    <!-- //////////Tickets/////////// -->
+
+    <!-- Search -->
+    <string name="comma_splitted_text">%s, %s</string>
+    <string name="from">Откуда</string>
+    <string name="dash_split_text">%s - %s</string>
+    <string name="to">Куда</string>
+    <string name="forth">Туда</string>
+    <string name="back">Обратно</string>
+    <string name="passengers">Пассажиры</string>
+    <string name="comfort_class">Класс</string>
+    <string name="search">Поиск</string>
+    <string name="show">Показать</string>
+    <string name="new_search">Новый поиск</string>
+    <string name="date">Дата</string>
+    <string name="reset_all">Сбросить все</string>
+    <string name="reset">Сбросить</string>
+    <string name="error_search_params_from_place">Укажите место отправления</string>
+    <string name="error_search_params_to_place">Укажите место прибытия</string>
+    <string name="error_search_params_from_date">Укажите дату отправления</string>
+
+    <!-- Place select -->
+    <string name="unfilled_place_placeholder">Город, аэропорт, вокзал</string>
+
+    <!-- Date select -->
+    <string name="departure_place_to_arrival_place">%1$s – %2$s</string>
+    <string name="departure_date_to_arrival_date">%1$s – %2$s</string>
+    <string name="skip_arrival">Обратно не нужно</string>
+
+    <!-- Passengers -->
+    <string name="done">Готово</string>
+    <string name="toolbar_passengers"> пассажиры</string>
+    <string name="adult"> Взрослые</string>
+    <string name="children">Дети</string>
+    <string name="passenger_child_age_zero">До года</string>
+    <string name="passenger_with_seat">с местом</string>
+
+    <string name="passenger_without_seat">без места</string>
+
+    <string name="child_age">Возраст ребенка</string>
+    <string name="seat_required">С местом</string>
+    <string name="child_info_alert">Не более одного ребенка без места на одного взрослого</string>
+
+    <string name="comfort_type_economy">Эконом</string>
+    <string name="comfort_type_premium_economy">Премиум эконом</string>
+    <string name="comfort_type_business">Бизнес</string>
+    <string name="comfort_type_first_class">Первый класс</string>
+
+    <!-- Filters -->
+    <string name="filters">фильтры</string>
+    <string name="time">время</string>
+    <string name="route">маршрут</string>
+    <string name="points">пункты</string>
+    <string name="departure_time">Отправления</string>
+    <string name="arrival_time">Прибытия</string>
+    <string name="trip_max_time">В пути не более %1$s</string>
+    <string name="title_price">Цена</string>
+    <string name="max_changes">Пересадок не более %1$d</string>
+    <string name="without_changes"><b>Без пересадок</b></string>
+    <string name="carriers">Перевозчики</string>
+    <string name="departure_points">Пункты отправления</string>
+    <string name="arrival_points">Пункты прибытия</string>
+    <string name="plane_small">самолет</string>
+    <string name="train_small">поезд</string>
+    <string name="bus_small">автобус</string>
+    <string name="taxi_small">такси</string>
+    <string name="suburban_small">электричка</string>
+    <string name="all">Все</string>
+
+    <!-- Tickets search -->
+    <string name="routs_not_found">Билетов не найдено</string>
+    <string name="routs_not_found_description">Посмотрите билеты на другие\nдаты или измените маршрут\nпутешествия</string>
+    <string name="repeat_search">Повторить поиск</string>
+    <string name="routs_direction_error">Точка отправления и точка прибытия не должны совпадать</string>
+    <string name="trip_duration">Время в пути от %s</string>
+    <string name="from_what">От %s</string>
+    <string name="search_info_title">Что такое группы маршрутов</string>
+    <string name="search_info_description">Мы сгруппировали разные виды транспорта, чтобы создать оптимальные маршруты для Вашей поездки. Группы отличаются по наличию и очередности видов транспорта, пересадочным пунктам, и др. критериям. Выбирайте ту транспортную комбинацию, которая подходит именно Вам!</string>
+    <string name="not_show_info">Не показывать больше эту подсказку</string>
+    <string name="tickets_selection">Выбор билетов</string>
+    <string name="segment_duration_time_pattern">hч mmмин</string>
+    <string name="segment_duration_hour_pattern">hч</string>
+    <string name="tickets_expired_alert_title">Результаты устарели</string>
+    <string name="tickets_expired_alert_description">Повторить поиск?</string>
+    <string name="segment_routes_not_found_title">Не удалось построить маршрут</string>
+    <string name="segment_routes_not_found_description">Попробуйте изменить предыдущие сегменты</string>
+
+    <!-- Basket -->
+    <string name="basket_header_forth">Туда %s</string>
+    <string name="basket_header_back">Обратно %s</string>
+    <string name="select_with">Выберите %s</string>
+    <string name="or_with">%s или %s</string>
+    <string name="on_with">На %s</string>
+    <string name="airports">Аэропорты</string>
+    <string name="railway_stations">Вокзалы</string>
+    <string name="stations">Станции</string>
+    <string name="ticket">Билет</string>
+
+    <!--  Detail Route  -->
+    <string name="detail_routes">Детали маршрута</string>
+    <string name="basket_selected_item_description">%s %s - %s %s  •  %s</string>
+    <string name="itinerary">Маршрут следования</string>
+    <string name="services">Услуги</string>
+    <string name="train_cars_types">Типы вагонов</string>
+    <string name="price_title">Стоимость</string>
+    <string name="about_tariff">о тарифе</string>
+    <string name="transfer_duration">Пересадка  •  %s</string>
+    <string name="local_time_title">*время указано местное</string>
+    <string name="hasElectronicRegistration">Доступна электронная регистрация</string>
+    <string name="hasNotElectronicRegistration">Электронная регистрация недоступна</string>
+    <string name="seats_count_title">Мест: %d</string>
+    <string name="bus_passengers_requirements">Для посадки необходим паспорт и распечатанный билет</string>
+    <string name="transfer_not_required">%s • трансфер не требуется</string>
+    <string name="plus_price">+ %s</string>
+    <string name="ticket_price_title">Стоимость билета</string>
+    <string name="ticket_price_description">Цена была учтена ранее</string>
+    <string name="only_forth">Только туда</string>
+    <string name="only_back">Только туда</string>
+    <string name="forth_and_back">Туда и обратно</string>
+    <string name="select_route_title">Выбрать маршрут от %s</string>
+    <string name="buy_tickets_title">Купить от %s</string>
+    <string name="point_with">%s  •  %s</string>
+    <string name="coach_type_saved_description">Выбранный тип вагона успешно сохранен</string>
+    <string name="transport_performs">(выполняет - %s)</string>
+
+    <!--  Train Coach Type  -->
+    <string name="buffetCar">Вагон-бистро</string>
+    <string name="business">Бизнес класс</string>
+    <string name="compartment">Купе</string>
+    <string name="economy">Эконом</string>
+    <string name="economyPlus">Эконом+</string>
+    <string name="first">Первый класс</string>
+    <string name="luxury">СВ</string>
+    <string name="meetingCoupe">Купе-переговорная</string>
+    <string name="sedentary">Сидячий</string>
+    <string name="shared">Общий</string>
+    <string name="soft">Люкс</string>
+    <string name="thirdClassSleeper">Плацкарт</string>
+
+    <!--  Service Options  -->
+    <string name="baggage_with">Багаж %s</string>
+    <string name="exchange_with">Обмен %s</string>
+    <string name="refund_with">Возврат %s</string>
+    <string name="carry_on_baggage_with">Ручная кладь %s</string>
+    <string name="with_collection">Со сбором</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="not_available">Недоступен</string>
+
+    <!--  Sorting Options  -->
+    <string name="cheaper_first">Сначала дешевле</string>
+    <string name="expensive_first">Сначала дороже</string>
+    <string name="early_arrival">Раннее прибытие</string>
+    <string name="late_arrival">Позднее прибытие</string>
+    <string name="early_departure">Раннее отправление</string>
+    <string name="late_departure">Позднее отправление</string>
+    <string name="travel_duration">По времени в пути</string>
+
+</resources>

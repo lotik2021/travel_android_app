@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.movista.presentation.custom.CheckableConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/сheckable_item_prices_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_train_cars_types"
+    android:clickable="true"
+    android:focusable="true"
+    android:minHeight="34dp">
+
+    <RadioButton
+        android:id="@+id/cars_types_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:alpha="0.7"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:theme="@style/PrimaryCheckBoxStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cars_types_title"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/space"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cars_types_checkbox"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="8dp"
+        tools:text="Бизнес класс" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/car_price"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/cars_types_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/free_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        android:textColor="@color/blue_primary"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="@+id/cars_types_title"
+        app:layout_constraintBottom_toBottomOf="@+id/cars_types_title"
+        tools:text="Мест: 8" />
+
+    <TextView
+        android:id="@+id/car_price"
+        style="@style/DetailRoutePrimaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:alpha="0.8"
+        android:gravity="end"
+        app:layout_constraintBaseline_toBaselineOf="@+id/free_place"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/free_place"
+        tools:text="27 295 ₽" />
+
+</ru.movista.presentation.custom.CheckableConstraintLayout>

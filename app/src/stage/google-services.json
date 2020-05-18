@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "859001636309",
+    "firebase_url": "https://stageappmovista.firebaseio.com",
+    "project_id": "stageappmovista",
+    "storage_bucket": "stageappmovista.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859001636309:android:140a279894b3d815",
+        "android_client_info": {
+          "package_name": "ru.movista.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859001636309-tpjl3co1bjoeo0js6poe4d1oh4hcl3h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi85zVTEhh7ws76_CDhNkZqa7WIpZNNUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859001636309-tpjl3co1bjoeo0js6poe4d1oh4hcl3h5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "859001636309-39kh5ufhtjppo1oeq4a073iik331bg6l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "app.movista.stage"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

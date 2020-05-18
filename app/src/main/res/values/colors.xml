@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Hex Opacity Values
+        100% — FF
+        95% — F2
+        90% — E6
+        85% — D9
+        80% — CC
+        75% — BF
+        70% — B3
+        65% — A6
+        60% — 99
+        55% — 8C
+        50% — 80
+        45% — 73
+        40% — 66
+        35% — 59
+        30% — 4D
+        25% — 40
+        20% — 33
+        15% — 26
+        10% — 1A
+        5% — 0D
+        0% — 00  -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="primary">#FFFFFF</color>
+    <color name="primary_dark">#FAFAFC</color>
+    <color name="primary_dark_transparent">#90FAFAFC</color>
+    <color name="color_accent">#2DCEB9</color>
+    <color name="color_accent_inactive">#802DCEB9</color>
+
+    <color name="bg_main">@android:color/white</color>
+
+    <color name="blue_dark">#602E3E6C</color>
+    <color name="blue_light">#F2F4FA</color>
+    <color name="divider">#ECEFF6</color>
+    <color name="blue">#233D5A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_gray">#F2F4FA</color>
+    <color name="test">#2C98F0</color>
+    <color name="gray_divider">#E8EAED</color>
+    <color name="transparent_white">#B3FFFFFF</color>
+    <color name="turbid_blue">#8D96AB</color>
+
+    <!-- Text -->
+    <color name="text_blue">#66233D5A</color> <!-- 40% transparency -->
+    <color name="text_grey">#7B8B9C</color>
+    <color name="text_black">#12192B</color>
+    <color name="text_light">#CC577195</color> <!-- 80% transparency -->
+
+    <!-- Icons -->
+    <color name="ic_launcher_test_background">#253257</color>
+    <color name="ic_launcher_dev_background">#807EF5</color>
+
+    <!-- Trips -->
+    <color name="trip_on_foot">#2DCEB9</color>
+    <color name="trip_bus">#1BB81F</color>
+    <color name="trip_commuter_train">#0086F5</color>
+    <color name="trip_taxi">#FFD600</color>
+    <color name="trip_tram">#F64747</color>
+    <color name="trip_ferry">#81CFE0</color>
+    <color name="trip_share_taxi">#807EF5</color>
+    <color name="trip_heavy_rail">#E74C3C</color>
+    <color name="trip_trolleybus">#5EBDFF</color>
+    <color name="trip_car">#4131F6</color>
+
+    <color name="primary_train">#ff2756</color>
+    <color name="primary_flight">#807EF5</color>
+    <color name="primary_bus">#88BF42</color>
+    <color name="primary_suburban">#007AFF</color>
+    <color name="primary_taxi">#FFAE03</color>
+    <color name="primary_foot">#2DCEB9</color>
+
+    <!-- для materialcomponents 1.0.0 нельзя указать цвет неактивной обводки
+         https://stackoverflow.com/questions/50817383/change-the-textinputlayout-outline-color -->
+    <!-- todo убрать после обновления, задать цвет selector'ом -->
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#7B8B9C</color>
+
+    <!-- Tickets -->
+    <color name="text_blue_medium">#801B2C57</color> <!-- 50% transparency -->
+    <color name="blue_primary">#1B2C57</color>
+    <color name="light_blue">#479DFC</color>
+    <color name="blue_primary_transparent">#801B2C57</color>
+    <color name="text_blue_light">#4D1B2C57</color>
+    <color name="text_blue_80">#CC1B2C57</color>
+    <color name="calendar_inactive_date">#C7CBDA</color>
+    <color name="inactive_text">#BBC0CD</color>
+    <color name="divider_search">#E6E6ED</color>
+    <color name="primary_red">#CC1D3E</color>
+    <color name="text_blue_hint">#401B2C57</color> <!-- 25% transparency -->
+
+    <!-- ComfortType -->
+    <color name="comfort_type_selected">#141D85FF</color> <!-- 8% transparency -->
+
+    <color name="map_accuracy_circle">#12233D5A</color> <!-- 7% transparency -->
+</resources>

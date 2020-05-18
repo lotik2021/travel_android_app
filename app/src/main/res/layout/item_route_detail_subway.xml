@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/subway_stops_image"
+        android:layout_width="12dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:tint="@color/color_accent"
+        app:layout_constraintBottom_toBottomOf="@+id/subway_destination_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subway_departure_name"
+        tools:src="@drawable/trip" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/subway_stops_image"
+        app:layout_constraintStart_toStartOf="@+id/subway_stops_image"
+        app:layout_constraintTop_toTopOf="@+id/subway_stops_image"
+        app:srcCompat="@drawable/dot_white" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/subway_stops_image"
+        app:layout_constraintEnd_toEndOf="@+id/subway_stops_image"
+        app:layout_constraintStart_toStartOf="@+id/subway_stops_image"
+        app:srcCompat="@drawable/dot_white" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_metro" />
+
+    <TextView
+        android:id="@+id/subway_line_numbers"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/bg_subway_line_number"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/subway_line_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:background="@drawable/bg_subway_line_number"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintStart_toEndOf="@+id/subway_line_numbers"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        tools:text="Замоскворецкая линия" />
+
+    <TextView
+        android:id="@+id/subway_departure_name"
+        style="@style/TextTripDetailLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/subway_departure_time"
+        app:layout_constraintStart_toEndOf="@+id/subway_stops_image"
+        app:layout_constraintTop_toBottomOf="@+id/subway_line_numbers"
+        tools:text="Пл. Боровицкая" />
+
+    <TextView
+        android:id="@+id/subway_stops"
+        style="@style/TextTripDetailStops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/subway_stops_image"
+        app:layout_constraintTop_toBottomOf="@+id/subway_departure_name"
+        tools:text="14 остановок" />
+
+    <TextView
+        android:id="@+id/subway_destination_name"
+        style="@style/TextTripDetailLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/subway_destination_time"
+        app:layout_constraintStart_toEndOf="@+id/subway_stops_image"
+        app:layout_constraintTop_toBottomOf="@+id/subway_stops"
+        tools:text="Пл. Боровицкая" />
+
+    <TextView
+        android:id="@+id/subway_departure_time"
+        style="@style/TextTripDetailTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subway_departure_name"
+        tools:text="20:00" />
+
+    <TextView
+        android:id="@+id/subway_destination_time"
+        style="@style/TextTripDetailTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/subway_destination_name"
+        app:layout_constraintEnd_toEndOf="@+id/subway_departure_time"
+        tools:text="21:00" />
+
+
+    <View
+        android:id="@+id/padding_view"
+        android:layout_width="0dp"
+        android:layout_height="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subway_stops_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

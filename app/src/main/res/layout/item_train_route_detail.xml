@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_ellipse"
+        android:tint="@color/primary_train"
+        app:layout_constraintBottom_toBottomOf="@+id/transport_title"
+        app:layout_constraintEnd_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toTopOf="@+id/transport_title" />
+
+    <TextView
+        android:id="@+id/transport_title"
+        style="@style/DetailRouteBoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:includeFontPadding="false"
+        android:text="@string/train_small"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.7"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/blue_primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/transport_title"
+        tools:text="фпк" />
+
+    <TextView
+        android:id="@+id/transport_description"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="Россия" />
+
+    <FrameLayout
+        android:id="@+id/item_route_info_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/transport_description"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/item_route_info"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/itinerary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:text="@string/itinerary"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/item_route_info_container" />
+
+    <TextView
+        android:id="@+id/services"
+        style="@style/DetailRouteBoldTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/services"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/itinerary" />
+
+    <TextView
+        android:id="@+id/services_description"
+        style="@style/DetailRouteSecondaryTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/services"
+        tools:text="Доступна электронная регистрация" />
+
+    <TextView
+        android:id="@+id/price_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/DetailRouteBoldTextStyle"
+        android:text="@string/train_cars_types"
+        app:layout_constraintStart_toStartOf="@+id/transport_title"
+        app:layout_constraintTop_toBottomOf="@+id/services_description" />
+
+    <LinearLayout
+        android:id="@+id/prices_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

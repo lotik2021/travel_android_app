@@ -1,0 +1,387 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/filters_toolbar"
+        style="@style/ToolbarWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/selected_dates"
+            style="@style/ToolbarBlueCenteredText"
+            android:text="@string/filters" />
+
+        <TextView
+            android:id="@+id/reset_all"
+            style="@style/FilterClearBtnStyle"
+            android:text="@string/reset_all"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_primary"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/filter_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filters_toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:paddingBottom="90dp">
+
+                <TextView
+                    android:id="@+id/filters_title_time"
+                    style="@style/FilterCategoryTitle"
+                    android:text="@string/time"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/reset_time"
+                    style="@style/FilterClearBtnStyle"
+                    android:text="@string/reset"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/filters_title_time"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/filters_title_time"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/FilterTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/departure_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/filters_title_time" />
+
+                <ru.movista.presentation.custom.rangebar.RangeBar
+                    android:id="@+id/filter_departure_range_bar"
+                    style="@style/FiltersSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14"
+                    app:mrb_rangeBar="true" />
+
+                <View
+                    style="@style/FilterDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filter_departure_range_bar" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/FilterTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arrival_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/filter_departure_range_bar" />
+
+                <ru.movista.presentation.custom.rangebar.RangeBar
+                    android:id="@+id/filter_arrival_range_bar"
+                    style="@style/FiltersSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <View
+                    style="@style/FilterDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filter_arrival_range_bar" />
+
+                <TextView
+                    android:id="@+id/max_trip_duration_label"
+                    style="@style/FilterTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trip_max_time"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/filter_arrival_range_bar" />
+
+                <ru.movista.presentation.custom.rangebar.RangeBar
+                    android:id="@+id/max_trip_duration_range_bar"
+                    style="@style/FiltersSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/max_trip_duration_label"
+                    app:mrb_rangeBar="false" />
+
+                <View
+                    android:id="@+id/view3"
+                    style="@style/FilterDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/max_trip_duration_range_bar" />
+
+                <TextView
+                    android:id="@+id/filters_title_route"
+                    style="@style/FilterCategoryTitle"
+                    android:text="@string/route"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/max_trip_duration_range_bar" />
+
+                <TextView
+                    android:id="@+id/reset_route"
+                    style="@style/FilterClearBtnStyle"
+                    android:text="@string/reset"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/filters_title_route"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/filters_title_route"
+                    tools:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/FilterTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/filters_title_route" />
+
+                <ru.movista.presentation.custom.rangebar.RangeBar
+                    android:id="@+id/filter_price_range_bar"
+                    style="@style/FiltersSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                <View
+                    style="@style/FilterDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filter_price_range_bar" />
+
+                <TextView
+                    android:id="@+id/filter_max_transfer_count_label"
+                    style="@style/FilterTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max_changes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/filter_price_range_bar" />
+
+                <ru.movista.presentation.custom.rangebar.RangeBar
+                    android:id="@+id/filter_max_transfer_count_range_bar"
+                    style="@style/FiltersSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/filter_max_transfer_count_label"
+                    app:mrb_rangeBar="false"
+                    app:mrb_tickDefaultColor="#1B2C57"
+                    app:mrb_tickHeight="12dp"
+                    app:mrb_tickWidth="4dp" />
+
+                <View
+                    style="@style/FilterDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filter_max_transfer_count_range_bar" />
+
+                <LinearLayout
+                    android:id="@+id/filters_carriers_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filter_max_transfer_count_range_bar">
+
+                    <TextView
+                        style="@style/FiltersLabelStyle"
+                        android:text="@string/carriers" />
+
+                    <TextView
+                        android:id="@+id/filters_carriers_button_label"
+                        style="@style/FiltersMarkStyle"
+                        android:text="@string/all" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/filters_right_arrow"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/filters_title_points"
+                    style="@style/FilterCategoryTitle"
+                    android:text="@string/points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filters_carriers_button" />
+
+                <TextView
+                    android:id="@+id/reset_points"
+                    style="@style/FilterClearBtnStyle"
+                    android:text="@string/reset"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/filters_title_points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/filters_title_points"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/filters_departure_points_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filters_title_points">
+
+                    <TextView
+                        style="@style/FiltersLabelStyle"
+                        android:text="@string/departure_points" />
+
+                    <TextView
+                        android:id="@+id/filters_departure_points_button_label"
+                        style="@style/FiltersMarkStyle"
+                        android:text="@string/all" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/filters_right_arrow"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/FilterDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filters_departure_points_button" />
+
+                <LinearLayout
+                    android:id="@+id/filters_arrival_points_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/filters_departure_points_button">
+
+                    <TextView
+                        style="@style/FiltersLabelStyle"
+                        android:text="@string/arrival_points" />
+
+                    <TextView
+                        android:id="@+id/filters_arrival_points_button_label"
+                        style="@style/FiltersMarkStyle"
+                        android:text="@string/all" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/filters_right_arrow"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/filters_min_trip_duration_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/blue_primary"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/max_trip_duration_range_bar"
+                    tools:text="1ч" />
+
+                <TextView
+                    android:id="@+id/filters_max_trip_duration_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="6dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/blue_primary"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/max_trip_duration_range_bar"
+                    app:layout_constraintTop_toTopOf="@id/max_trip_duration_range_bar"
+                    tools:text="1д 12ч" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply"
+            style="@style/ApplyButton.Blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:enabled="false"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingTop="12dp"
+            android:paddingBottom="14dp"
+            android:visibility="gone"
+            tools:text="Показать\n1024 билета от 12000₽"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+</LinearLayout>

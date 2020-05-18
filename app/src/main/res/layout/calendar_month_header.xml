@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/calendar_month_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_bold"
+        android:fontFeatureSettings="smcp"
+        android:textColor="@color/blue_primary"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="авг. 2018" />
+
+    <TextView
+        android:id="@+id/tv15"
+        style="@style/TextDateSelectDayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="пн"
+        app:layout_constraintEnd_toStartOf="@+id/tv16"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_month_title" />
+
+    <TextView
+        android:id="@+id/tv16"
+        style="@style/TextDateSelectDayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="вт"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv15"
+        app:layout_constraintEnd_toStartOf="@+id/tv17"
+
+        app:layout_constraintStart_toEndOf="@+id/tv15" />
+
+    <TextView
+        android:id="@+id/tv17"
+        style="@style/TextDateSelectDayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ср"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv15"
+        app:layout_constraintEnd_toStartOf="@+id/tv18"
+
+        app:layout_constraintStart_toEndOf="@+id/tv16" />
+
+    <TextView
+        android:id="@+id/tv18"
+        style="@style/TextDateSelectDayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="чт"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv15"
+        app:layout_constraintEnd_toStartOf="@+id/tv19"
+
+        app:layout_constraintStart_toEndOf="@+id/tv17" />
+
+    <TextView
+        android:id="@+id/tv19"
+        style="@style/TextDateSelectDayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="пт"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv15"
+        app:layout_constraintEnd_toStartOf="@+id/tv20"
+        app:layout_constraintStart_toEndOf="@+id/tv18" />
+
+    <TextView
+        android:id="@+id/tv20"
+        style="@style/TextDateSelectDayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="сб"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv15"
+        app:layout_constraintEnd_toStartOf="@+id/tv21"
+        app:layout_constraintStart_toEndOf="@+id/tv19" />
+
+    <TextView
+        android:id="@+id/tv21"
+        style="@style/TextDateSelectDayLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="вс"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv20" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

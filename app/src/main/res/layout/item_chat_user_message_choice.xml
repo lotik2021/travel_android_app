@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/user_message_choice_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="64dp">
+
+    <TextView
+        android:id="@+id/user_message_choice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/user_message_choice_bg"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@android:color/white"
+        tools:text="Дом">
+
+    </TextView>
+</FrameLayout>

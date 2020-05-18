@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/bg_slide_page_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/city_1" />
+
+        <ImageView
+            android:id="@+id/bg_slide_page_people"
+            android:layout_width="wrap_content"
+            android:layout_height="370dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/bg_slide_page_one" />
+
+        <ImageView
+            android:id="@+id/bg_slide_page_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/bg_slide_page_one" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/roboto_bold"
+        android:lineSpacingExtra="3dp"
+        android:textColor="?colorAccent"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/welcome_to_movista_title" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/roboto_medium"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        tools:text="@string/welcome_to_movista_description" />
+
+    <TextView
+        android:id="@+id/terms_of_use_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/terms_of_use_description"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/personal_data_policy_description"
+        app:layout_constraintEnd_toStartOf="@+id/terms_of_use_check_box"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/terms_of_use_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:padding="5dp"
+        android:theme="@style/DefaultCheckBoxStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/terms_of_use_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/terms_of_use_description" />
+
+    <TextView
+        android:id="@+id/personal_data_policy_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/personal_data_policy_description"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/privacy_policy_description"
+        app:layout_constraintEnd_toStartOf="@+id/personal_data_policy_check_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/personal_data_policy_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:padding="5dp"
+        android:theme="@style/DefaultCheckBoxStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/personal_data_policy_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/personal_data_policy_description" />
+
+    <TextView
+        android:id="@+id/privacy_policy_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:fontFamily="@font/roboto_medium"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/privacy_policy_description"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/privacy_policy_check_box"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/privacy_policy_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:padding="5dp"
+        android:theme="@style/DefaultCheckBoxStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/privacy_policy_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/privacy_policy_description" />
+
+    <TextView
+        android:id="@+id/definition_geo_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="@font/roboto_medium"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/definition_geo_location_description"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/skip_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/skip_btn"
+        style="@style/BaseMaterialOutlinedButton"
+        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/skip"
+        android:textColor="?colorAccent"
+        android:textSize="15dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp"
+        android:textAllCaps="false"
+        app:cornerRadius="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/allow_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/allow_btn"
+        style="@style/ApplyButton"
+        android:layout_width="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/allow"
+        android:textSize="15dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/skip_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/skip_btn" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/terms_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="privacy_policy_description,privacy_policy_check_box,terms_of_use_description,personal_data_policy_check_box,terms_of_use_check_box,personal_data_policy_description" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/base_description_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="description,title" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/geo_location_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="allow_btn,skip_btn,definition_geo_location"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/disabling_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

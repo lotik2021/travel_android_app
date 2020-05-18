@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_app_toolbar"
+        style="@style/ToolbarWhite"
+        app:title="@string/about_application" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/about_app_nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            tools:ignore="SmallSp">
+
+            <ImageView
+                android:id="@+id/logo_img"
+                android:layout_width="188dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/vector_drawable_toolbar_logo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/text_grey"
+                android:textSize="15sp"
+                tools:text="Версия 1.1.1, сборка 123" />
+
+            <TextView
+                android:id="@+id/reviews_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.1"
+                android:text="@string/reviews_title"
+                android:textAllCaps="true"
+                android:textColor="@color/text_blue"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/google_play_reviews"
+                style="@style/DefaultProfileTextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_star"
+                android:elevation="2dp"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/google_play_reviews_title" />
+
+            <TextView
+                android:id="@+id/social_network_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.1"
+                android:text="@string/social_network"
+                android:textAllCaps="true"
+                android:textColor="@color/text_blue"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:id="@+id/routes_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/instagram"
+                    style="@style/DefaultProfileTextView"
+                    android:drawableStart="@drawable/ic_instagram"
+                    android:text="@string/instagram" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/gray_divider" />
+
+                <TextView
+                    android:id="@+id/vk"
+                    style="@style/DefaultProfileTextView"
+                    android:drawableStart="@drawable/ic_vk"
+                    android:text="@string/vk" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/gray_divider" />
+
+                <TextView
+                    android:id="@+id/ok"
+                    style="@style/DefaultProfileTextView"
+                    android:drawableStart="@drawable/ic_ok"
+                    android:text="@string/ok_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/gray_divider" />
+
+                <TextView
+                    android:id="@+id/facebook"
+                    style="@style/DefaultProfileTextView"
+                    android:drawableStart="@drawable/ic_facebook"
+                    android:text="@string/facebook" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/gray_divider" />
+
+                <TextView
+                    android:id="@+id/youtube"
+                    style="@style/DefaultProfileTextView"
+                    android:drawableStart="@drawable/ic_youtube"
+                    android:text="@string/youtube" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@color/gray_divider" />
+
+                <TextView
+                    android:id="@+id/twitter"
+                    style="@style/DefaultProfileTextView"
+                    android:drawableStart="@drawable/ic_twitter"
+                    android:text="@string/twitter" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

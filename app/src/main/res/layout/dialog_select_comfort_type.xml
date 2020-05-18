@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/comfort_type_economy_button"
+        style="@style/SelectComfortTypeDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/comfort_type_economy" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/divider_search" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/comfort_type_premium_economy_button"
+        style="@style/SelectComfortTypeDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/comfort_type_premium_economy" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/divider_search" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/comfort_type_business_button"
+        style="@style/SelectComfortTypeDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/comfort_type_business" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/divider_search" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/comfort_type_first_class_button"
+        style="@style/SelectComfortTypeDialogButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/comfort_type_first_class" />
+
+</LinearLayout>

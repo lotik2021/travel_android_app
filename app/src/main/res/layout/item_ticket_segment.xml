@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/segment_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    tools:ignore="ContentDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="16dp"
+        android:minHeight="145dp">
+
+        <LinearLayout
+            android:id="@+id/transports_types"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="0dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"
+            tools:background="@color/blue_primary" />
+
+        <TextView
+            android:id="@+id/segment_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/transfer_count"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/transports_types"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Aeroflot, S7" />
+
+        <TextView
+            android:id="@+id/transfer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/segment_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="2 пересадки" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/blue_primary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/transports_types"
+            app:layout_constraintTop_toBottomOf="@+id/segment_title"
+            tools:text="15:35" />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:alpha="0.7"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/start_time"
+            app:layout_constraintStart_toEndOf="@+id/start_time"
+            tools:text="2 авг" />
+
+        <View
+            android:id="@+id/start_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="4dp"
+            android:background="#CDCFD5"
+            app:layout_constraintBottom_toBottomOf="@+id/start_time"
+            app:layout_constraintEnd_toStartOf="@+id/duration"
+            app:layout_constraintStart_toEndOf="@+id/start_date"
+            app:layout_constraintTop_toTopOf="@+id/start_time"/>
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/start_time"
+            app:layout_constraintEnd_toStartOf="@+id/end_line"
+            app:layout_constraintStart_toEndOf="@+id/start_line"
+            tools:text="4ч 49 мин" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/blue_primary"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/start_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="15:35" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:alpha="0.7"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/start_time"
+            app:layout_constraintEnd_toStartOf="@+id/end_time"
+            tools:text="2 авг" />
+
+        <View
+            android:id="@+id/end_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="4dp"
+            android:background="#CDCFD5"
+            app:layout_constraintBottom_toBottomOf="@+id/start_time"
+            app:layout_constraintEnd_toStartOf="@+id/end_date"
+            app:layout_constraintStart_toEndOf="@+id/duration"
+            app:layout_constraintTop_toTopOf="@+id/start_time" />
+
+        <TextView
+            android:id="@+id/from_place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.7"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/to_place"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/start_time"
+            app:layout_constraintTop_toBottomOf="@+id/start_time"
+            tools:text="а/п Санта Круз Деy " />
+
+        <TextView
+            android:id="@+id/to_place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:alpha="0.7"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:lines="1"
+            android:textColor="@color/blue_primary"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/from_place"
+            app:layout_constraintEnd_toEndOf="@+id/end_time"
+            app:layout_constraintStart_toEndOf="@+id/from_place"
+            app:layout_constraintTop_toBottomOf="@+id/start_time"
+            tools:text="а/п Санта К " />
+
+        <TextView
+            android:id="@+id/provider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0.7"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:textColor="@color/blue_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/price_group"
+            app:layout_constraintStart_toStartOf="@id/start_time"
+            app:layout_constraintTop_toBottomOf="@+id/from_place"
+            app:layout_constraintWidth_default="wrap"
+            tools:text="на travel.ru" />
+
+        <HorizontalScrollView
+            android:id="@+id/price_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/provider"
+            app:layout_constraintTop_toBottomOf="@+id/from_place">
+
+            <LinearLayout
+                android:id="@+id/price_group_container"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+<!--                <include layout="@layout/item_carriage_type"/>-->
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
